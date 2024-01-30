@@ -1,0 +1,187 @@
+<!--
+    Made by Manon Ykema
+    Handed in on: 16-02-2023
+
+    Used "img" folder
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/svg/lnu-favicon.svg">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/main.js" type="application/javascript"></script>
+    <script src="../js/userLoggedIn.js" type="application/javascript"></script>
+    <script src="../js/filterActivities.js" type="application/javascript"></script>
+    <script src="../js/scrollToTop.js" type="application/javascript"></script>
+    <title>Activities Page</title>
+</head>
+<body>
+<div id="top-nav">
+    <h6 id="logged-in-user"></h6>
+    <span class="divider-top-nav"></span>
+    <a href="../index.html">Log in as other user</a>
+</div>
+<nav>
+    <div id="logo">
+        <a href="home.html">
+            <img src="../img/svg/lnu-favicon.svg" alt="Logo Lnu"/>
+            <h1>Development of Web Based Applications </h1>
+        </a>
+    </div>
+    <ul id="menu-list">
+        <li>
+            <a href="activities.html" class="active">Activities in V&#228;xj&#246;</a>
+        </li>
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+<div id="page-wrapper">
+    <div class="breadcrumbs">
+        <a href="home.html">Home > </a>
+        <a href="activities.html">Activities in V&#228;xj&#246;</a>
+    </div>
+
+    <div id="banner"></div>
+
+    <section id="sidebar">
+        <h3>Filters</h3>
+        <label class="filter">Show all
+            <input class="checkbox-pop" type="checkbox" value="show-all" checked="checked">
+            <span class="checkmark"></span>
+        </label>
+        <label class="filter">Museums
+            <input class="checkbox-pop" type="checkbox" value="museum">
+            <span class="checkmark"></span>
+        </label>
+        <label class="filter">Sights in the city
+            <input class="checkbox-pop" type="checkbox" value="sight-seeing">
+            <span class="checkmark"></span>
+        </label>
+        <label class="filter">Restaurant and Pubs
+            <input class="checkbox-pop" type="checkbox" value="restaurant">
+            <span class="checkmark"></span>
+        </label>
+    </section>
+
+    <div id="grid">
+        <h1>Activities in V&#228;xj&#246;</h1>
+        <section class="activities-grid">
+            <div class="activity sight-seeing">
+                <img src="../img/activities/cathedral.png" alt="Vaxjo Cathedral">
+                <h4>V&#228;xj&#246; Cathedral</h4>
+                <p>Architectural Buildings, <br/>
+                    Religious Sites.</p>
+                <button>
+                    <a href="https://www.svenskakyrkan.se/vaxjo" target="_blank">More information</a>
+                </button>
+            </div>
+            <div class="activity museum">
+                <img src="../img/activities/utvandrarnas-hus.jpg" alt="Utvandrarnas Hus">
+                <h4>Utvandrarnas Hus</h4>
+                <p>History Museums</p>
+                <button>
+                    <a href="https://kulturparkensmaland.se/besok-oss/vara-besoksmal/utvandrarnas-hus/" target="_blank">More
+                        information</a>
+                </button>
+            </div>
+            <div class="activity museum">
+                <img src="../img/activities/sveriges-glasmuseum.jpg" alt="Sveriges Glasmuseum">
+                <h4>Sveriges Glasmuseum</h4>
+                <p>Specialty Museums</p>
+                <button>
+                    <a href="https://kulturparkensmaland.se/" target="_blank">More information</a>
+                </button>
+            </div>
+            <div class="activity museum">
+                <img src="../img/activities/smalands-museum-och-sveriges.jpg" alt="Vaxjo Cathedral">
+                <h4>Smalands Museum och Sversiges</h4>
+                <p>Specialty Museums • <br>
+                    History Museums
+                </p>
+                <button>
+                    <a href="https://kulturparkensmaland.se/besok-oss/vara-besoksmal/" target="_blank">More
+                        information</a>
+                </button>
+            </div>
+            <div class="activity sight-seeing">
+                <img src="../img/activities/linneparken.jpg" alt="Linen Parks">
+                <h4>Linneparken</h4>
+                <p>Parks</p>
+                <button>
+                    <a href="https://www.tripadvisor.nl/Attraction_Review-g189849-d4557008-Reviews-Linneparken-Vaxjo_Kronoberg_County.html"
+                       target="_blank">More information</a>
+                </button>
+            </div>
+            <div class="activity sight-seeing">
+                <img src="../img/activities/teleborg-castle.jpg" alt="Teleborg Castle">
+                <h4>Teleborg Castle</h4>
+                <p>Historic Sites • <br>
+                    Historic Walking Areas</p>
+                <button>
+                    <a href="https://www.spottinghistory.com/view/1396/teleborg-castle/" target="_blank">More
+                        information</a>
+                </button>
+            </div>
+            <div class="activity restaurant">
+                <img src="../img/activities/chapter-house.jpg" alt="Chapter House">
+                <h4>Chapter House</h4>
+                <p>Bar • <br>
+                    European</p>
+                <button>
+                    <a href="https://chapterhouse.se/" target="_blank">More information</a>
+                </button>
+            </div>
+            <div class="activity restaurant">
+                <img src="../img/activities/inside-the-pub.jpg" alt="The Bishops Arms">
+                <h4>The Bishops Arms</h4>
+                <p>Bar • <br>
+                    European</p>
+                <button>
+                    <a href="https://www.bishopsarms.com/hittar-inte-sidan" target="_blank">More information</a>
+                </button>
+            </div>
+            <div class="activity restaurant">
+                <img src="../img/activities/restaurangen-ligger-pa.jpg" alt="Skai">
+                <h4>Skai</h4>
+                <p>Bar • <br>
+                    Swedish</p>
+                <button>
+                    <a href="https://restaurangskai.se/" target="_blank">More information</a>
+                </button>
+            </div>
+            <div class="activity sight-seeing">
+                <img src="../img/activities/asnens-national-park.jpg" alt="Åsnens National Park">
+                <h4>Åsnens National Park</h4>
+                <p>National Parks</p>
+                <button>
+                    <a href="https://visitasnen.se/" target="_blank">More information</a>
+                </button>
+            </div>
+            <div class="activity sight-seeing">
+                <img src="../img/activities/granhults-kyrka-i-granhult.jpg" alt="Granhults Kyrka">
+                <h4>Granhults Kyrka</h4>
+                <p>Churches and Cathedrals</p>
+                <button>
+                    <a href="http://www.granhultskyrka.org/" target="_blank">More information</a>
+                </button>
+            </div>
+        </section>
+    </div>
+</div>
+<button id="toTopBtn">Scroll To Top</button>
+<footer>
+    <p>Copyright © 2023, Växjö. All Rights Reserved. </p>
+</footer>
+</body>
+</html>

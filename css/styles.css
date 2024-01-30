@@ -1,0 +1,195 @@
+/*
+    Styling used mainly for activities.html
+    Made by: Manon Ykema
+    Handed in on 16-02-2023
+ */
+
+#top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: var(--primary-color);
+    padding: 0.5rem 3rem;
+}
+
+#top-nav a,
+#logged-in-user {
+    font-size: 0.8rem;
+}
+
+.divider-top-nav {
+    height: 0.8rem;
+    width: 0.1rem;
+    margin: 0 1rem;
+    background: var(--black-color);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 3rem;
+    box-shadow: 0 4px 4px #DADADA;
+}
+
+#logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+#logo a {
+    display: inherit;
+    text-decoration: none;
+}
+
+#logo img {
+    height: 2rem;
+    margin-right: 0.7rem;
+}
+
+#logo h1 {
+    font-size: 1.2rem;
+}
+
+#menu-list,
+#menu-list li a {
+    list-style-type: none;
+    display: flex;
+    text-decoration: none;
+}
+
+#menu-list li a:hover {
+    text-decoration: underline;
+}
+
+#menu-list li:not(:last-child) {
+    margin-right: 1rem;
+}
+
+#menu-list li a.active {
+    text-decoration: underline;
+}
+
+#page-wrapper {
+    width: 100%;
+    padding: 0 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.breadcrumbs a,
+.breadcrumbs a:not(:last-child) {
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.breadcrumbs a:first-child {
+    color: var(--dark-grey-color);
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+#banner {
+    background-image: url("../img/bmp/banner-activities.bmp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#sidebar {
+    width: 21%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar h3 {
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+#sidebar .filter {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+.filter input[type="checkbox"] {
+    margin-right: 0.4rem;
+}
+
+.filter input[type="checkbox"]:checked{
+    animation: pop .3s ease;
+    accent-color: var(--primary-color);
+}
+
+
+@keyframes pop {
+    0% { opacity:0.5; }
+    75% {opacity:1; }
+    100% { transform: scale(1.2); }
+}
+
+#grid {
+    width: 70%;
+    margin-bottom: 5rem;
+}
+
+#grid h1 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.563rem;
+    grid-row-gap: 3rem;
+}
+
+.activities-grid .activity img {
+    height: 180px;
+    clip-path: inset(0% 0% 0% 0%);
+    width: 240px;
+}
+
+.activities-grid .activity h4 {
+    font-weight: 700;
+    margin: 0.9rem 0;
+}
+
+.activities-grid .activity p {
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 0.8rem;
+    width: 70%;
+}
+
+.activities-grid .activity button {
+    background: var(--primary-color);
+    border: none;
+    padding: 0.5rem 1.9rem;
+    border-radius: 3rem;
+}
+
+.activities-grid .activity button:hover {
+    background: #FFEC67;
+}
+
+.activities-grid .activity button a {
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+

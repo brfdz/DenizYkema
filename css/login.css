@@ -1,0 +1,185 @@
+/*
+    Styling used mainly for activities.html
+    Made by: Manon Ykema
+    Handed in on 16-02-2023
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+
+:root {
+    --primary-color: #FFE001;
+    --light-grey-color: #F7F7F7;
+    --grey-color: #DBDBDB;
+    --dark-grey-color: #989898;
+    --black-color: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+#page-wrapper-login {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.information-login {
+    width: 40vw;
+    height: 93%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.information-login p {
+    width: 32vw;
+    margin-bottom: 1.5rem;
+}
+
+.information-header {
+    display: inline-flex;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.information-header h1 {
+    font-size: 1.7rem;
+}
+
+.logo-login {
+    height: 3rem;
+    margin-right: 0.6rem;
+}
+
+.header h1 {
+    font-size: 1.7rem;
+}
+
+.logo-lnu {
+    width: 200px;
+}
+
+.modal-login {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+}
+
+.modal-login form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 6px 12px var(--grey-color);
+}
+
+.modal-login form input {
+    padding: 0.7rem;
+    border: 2px solid var(--grey-color);
+    border-radius: 0.4rem;
+}
+
+.modal-login form input:focus-visible {
+    border: 2px solid var(--primary-color);
+    outline: none;
+}
+
+#username {
+    margin-bottom: 0.6rem;
+}
+
+#submit-btn {
+    background: var(--primary-color);
+    padding: 0.6rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.4rem;
+    margin-top: 1.2rem;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.modal-information {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.information-password {
+    margin: 0.4rem 0;
+    font-size: 0.7rem;
+    text-align: center;
+    color: var(--dark-grey-color);
+}
+
+#password-check {
+    text-align: right;
+    font-size: 0.7rem;
+    margin: 0.7rem 0;
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--dark-grey-color);
+}
+
+.divider {
+    width: 100%;
+    margin: 1rem 0;
+    border: 0.01rem solid var(--grey-color);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    background: var(--light-grey-color);
+    place-self: flex-end;
+}
+
+footer p {
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 768px){
+    .information-login {
+        width: 100vw;
+        height: auto;
+        padding: 5rem 5rem 0 5rem;
+    }
+
+    .information-login p {
+        width: 67vw;
+    }
+
+    .modal-login {
+        margin: 4rem 0;
+    }
+
+    .modal-information {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .information-header h1 {
+        font-size: 1.2rem;
+    }
+
+    .logo-login {
+        height: 2rem;
+    }
+
+    .logo-lnu {
+        height: 5rem;
+    }
+}

@@ -1,0 +1,54 @@
+<!--
+    Made by Manon Ykema
+    Handed in on: 16-02-2023
+
+    Used "img" folder
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="icon" type="image/x-icon" href="img/svg/lnu-favicon.svg">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js" type="application/javascript"></script>
+    <title>Log In Page</title>
+</head>
+<body id="page-wrapper-login">
+<div class="information-login">
+    <div class="information-header">
+        <img src="img/svg/lnu-favicon.svg" alt="Logo of Linnaeus University" class="logo-login"/>
+        <h1>Development of Web Based Applications</h1>
+    </div>
+    <p>Done with your assignments, and looking for something to do?
+        Here you can find all the different types of activities to do in Växjö.
+    </p>
+    <img src="img/bmp/lnu.bmp" alt="Linnaeus University Logo" class="logo-lnu"/>
+</div>
+
+<div class="modal-login">
+    <form>
+        <p class="information-password">Note: Enter any username and password(follow requirements)</p>
+        <input type="text" id="username" name="username" placeholder="Username">
+        <span id="password-check">Check password strength</span>
+        <input type="password" id="password" name="password" placeholder="Password">
+        <button type="button" id="submit-btn">
+            Log in
+        </button>
+        <span class="divider"></span>
+        <p class="information-password">Min 8 characters, 2 uppercase, 1 number</p>
+    </form>
+    <p class="modal-information">This course is part of <a href="https://lnu.se/" target="_blank">Linnaeus
+        University</a>.</p>
+</div>
+
+<footer>
+    <p>Copyright © 2023, Växjö. All Rights Reserved. </p>
+</footer>
+
+</body>
+</html>

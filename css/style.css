@@ -1,0 +1,260 @@
+/*
+    Styling used mainly for activities.html
+    Made by: Elif Berfin Deniz
+    Handed in on 16-02-2023
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    margin-top: 0.6em;
+    font-size: 0.8rem;
+}
+
+.login a:link {
+    text-decoration: underline;
+}
+
+.navbar {
+    top: 2rem;
+    width: 100%;
+    height: 4.2rem;
+    background-color: white;
+    box-shadow: 0 0.3em 0.6em -0.3em rgba(0, 0, 0, 0.3);
+}
+
+.navbar-wrapper {
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em auto;
+    font-weight: bold;
+}
+
+.logo-wrap {
+    width: 10rem;
+}
+
+.logo {
+    height: 2.4rem;
+}
+
+.list {
+    width: 17rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a:hover, a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    text-decoration: underline;
+}
+
+.in-contact {
+    text-decoration: underline;
+}
+
+.page-wrapper {
+    width: 90%;
+    margin: 4rem auto 8rem auto;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-page-wrapper {
+    width: 90%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 5vw;
+}
+
+.two-column {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+}
+
+.info {
+    font-size: 1rem;
+    max-width: 35vw;
+}
+
+.tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.container {
+    position: relative;
+    margin-top: 2rem;
+    width: 27rem;
+    height: 15rem;
+    z-index: -1;
+}
+
+.tech img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.name {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(250, 250, 250); /*grey background*/
+    color: #000000; /* black text */
+    width: 100%;
+    height: 3rem;
+    font-size: 1.1rem;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    column-gap: 5rem;
+}
+
+.lnu {
+    max-height: 9rem;
+    object-fit: scale-down;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2rem;
+    width: 35rem;
+}
+
+.castle {
+    width: 45vw;
+}
+
+.contact {
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    background-color: #ffe001;
+    padding: 5px 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.contact:hover {
+    box-shadow: 0 0.3em 0.6em -0.3em rgba(0, 0, 0, 0.3);
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding-top: 5rem;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(250, 250, 250);
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 0.9rem;
+}
+
+#toTopBtn {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    bottom: 2rem;
+    right: 1rem;
+    border: none;
+    background-color: rgb(230, 230, 230, 0.8);
+    color: black;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+}
+
+#toTopBtn:hover {
+    background-color: #ffe001;
+}
+
+@media only screen and (max-width: 765px) {
+    .navbar {
+        height: 7rem;
+    }
+
+    .navbar-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-page-wrapper {
+        flex-direction: column;
+        row-gap: 10vh;
+    }
+
+    .castle {
+        width: 70vw;
+    }
+
+    .contact-text {
+        align-items: center;
+    }
+}
+
+
+
