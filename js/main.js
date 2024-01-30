@@ -19,7 +19,7 @@ $(document).ready(function () {
             checkPassword(username);
             if (redirect){
                 var url = window.location.href;
-                window.location.href = url.concat("html/home.html");
+                window.location.href = "https://brfdz.github.io/DenizYkema/html/home.html";
             }
         }
     });
